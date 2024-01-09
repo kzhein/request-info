@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const app = express();
 
-app.enable('trust proxy');
+app.set('trust proxy', true);
 
 app.get('/', async (req, res) => {
   const { ip } = req;
